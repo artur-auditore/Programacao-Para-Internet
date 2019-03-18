@@ -20,3 +20,6 @@
 
 ### Portfólio
 - Aplicativo desenvolvido em Kotlin: [Watch](https://github.com/artur-auditore/Watch)
+
+### Outros
+- Importante: Inglês (Conversação)

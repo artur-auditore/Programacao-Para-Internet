@@ -5,7 +5,7 @@
 - Artur Rocha de Sousa
 
 ### Contatos:
-- Telefone: (86) 981146209 (WhatsApp e Telegram)
+- Telefone: (86) 98114-6209 (WhatsApp e Telegram)
 - E-mail: defteros7@gmail.com
 
 ### Habilidades:

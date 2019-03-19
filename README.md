@@ -1,10 +1,9 @@
 # Programacao-Para-Internet
 
 
-### Nome:
+### Informações:
 - Artur Rocha de Sousa
-
-### Contatos:
+- 21 anos
 - Telefone: (86) 98114-6209 (WhatsApp e Telegram)
 - E-mail: defteros7@gmail.com
 

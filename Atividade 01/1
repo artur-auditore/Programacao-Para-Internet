@@ -1,0 +1,25 @@
+import requests
+
+'''1. Crie um programa que receba uma URL e
+execute um método GET exibindo como
+saída:
+– Status code;
+– Cabeçalhos (response headers);
+– Tamanho da resposta (content length);
+– O corpo da resposta.'''
+
+
+def main():
+    r = requests.get('http://www.instagram.com')
+
+    print('Status Code:', r.status_code, '\n')
+
+    print('Cabeçaho: ', r.headers['content-type'])
+
+    print('Corpo da resposta: ', len(r.text))
+
+    print('Tamanho da resposta: ', r.content, '\n')
+
+
+if __name__ == "__main__":
+    main()

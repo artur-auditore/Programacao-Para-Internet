@@ -1,0 +1,20 @@
+import re
+
+from bs4 import BeautifulSoup
+import requests
+
+keyword = ''
+url = 'https://fb.com'
+death = 4
+
+def main():
+
+    response = requests.get(url)
+
+    html = BeautifulSoup(response.text, 'html.parser')
+    links = html.findAll('a', {'href': re.compile("http")})
+    for link in links:
+        print(link['href'])
+
+if __name__ == '__main__':
+        main()

@@ -22,7 +22,7 @@ def  convidar(request,perfil_id):
 	return  redirect('index')
 
 def get_perfil_logado(request):
-	return Perfil.objects.get(id=1)
+	return Perfil.objects.get(id=2)
 
 def aceitar(request, convite_id):
 	convite = Convite.objects.get(id=convite_id)
@@ -34,4 +34,9 @@ def excluir(request, perfil_id):
 	perfil_logado = get_perfil_logado(request)
 	perfil_logado.excluir(perfil_a_excluir)
 
+	return redirect('index')
+
+def ignorar(request, convite_id):
+	convite = Convite.objects.get(id=convite_id)
+	convite.ignorar(convite)
 	return redirect('index')

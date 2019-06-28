@@ -13,9 +13,6 @@ class Perfil(models.Model):
     def convidar(self, perfil_convidado):
         Convite(solicitante=self, convidado = perfil_convidado).save()
 
-    def ignorar(self, convite_ignorado):
-        pass
-
     def excluir(self, perfil_excluir):
         self.contatos.remove(perfil_excluir)
 
@@ -26,4 +23,8 @@ class Convite(models.Model):
     def aceitar(self):
         self.convidado.contatos.add(self.solicitante)
         self.solicitante.contatos.add(self.convidado)
+        self.delete()
+
+    def ignorar(self, convite_ignorado):
+        self.convidado.contatos.remove(self.solicitante)
         self.delete()

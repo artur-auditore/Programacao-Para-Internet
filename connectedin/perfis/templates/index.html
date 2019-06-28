@@ -31,7 +31,8 @@
                             <li class="list-group-item">
 
                             {{ convite.solicitante.nome }}
-                            <a href="{% url 'aceitar' convite.id %}" class="pull-right">Aceitar</a>
+                            <a href="{% url 'aceitar' convite.id %}" class="btn btn-success">Aceitar</a>
+                            <a href="{% url 'ignorar' convite.id %}" class="btn btn-danger">Ignorar</a>
 
                             </li>
                         {% endfor %}
